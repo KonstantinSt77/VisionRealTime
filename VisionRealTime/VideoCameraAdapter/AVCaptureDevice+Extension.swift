@@ -77,7 +77,7 @@ extension AVCaptureDevice {
                 try lockForConfiguration()
             }
             catch {
-                fatalError("")
+                fatalError("")   
             }
             activeFormat = selectedFormat
             
