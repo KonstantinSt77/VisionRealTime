@@ -63,7 +63,6 @@ extension AVCaptureDevice {
         else {
             availableFormats = formats
         }
-        
         var selectedFormat: AVCaptureDevice.Format?
         if let preferredSize = preferredSpec.size {
             selectedFormat = formatFor(preferredSize: preferredSize, availableFormats: availableFormats)
@@ -77,7 +76,7 @@ extension AVCaptureDevice {
                 try lockForConfiguration()
             }
             catch {
-                fatalError("")   
+                fatalError("")
             }
             activeFormat = selectedFormat
             
